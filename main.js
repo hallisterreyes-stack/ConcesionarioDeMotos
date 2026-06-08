@@ -38,8 +38,6 @@ const renderizarInterfaz = () => {
         const titulo = document.createElement('h4');
         titulo.textContent = moto.modelo;
 
-        const precioTexto = document.createElement('p');
-        precioTexto.textContent = Precio + IVA (15%): $${precioFinal.toFixed(2)}; // [cite: 551]
 
         // Botón de eliminación interactiva [cite: 526, 554, 555]
         const btnEliminar = document.createElement('button');
@@ -74,7 +72,7 @@ const renderizarInterfaz = () => {
 
     // 5. ACTUALIZACIÓN DE MÉTRICAS EN TIEMPO REAL [cite: 441, 515]
     displayTotalMotos.textContent = inventario.length;
-    displayValorInversion.textContent = $${valorTotalInversion.toFixed(2)};
+    displayValorInversion.textContent = $$;{valorTotalInversion.toFixed(2)};
 };
 
 /**
